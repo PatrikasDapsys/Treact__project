@@ -126,14 +126,15 @@ NAV
 .input__wrapper {
     position: relative;
     margin-bottom: 80px;
+    display: flex;
+    align-items: center;
 }
 .input__field {
-    position: absolute;
+    width: 100%;
+    height: 100%;
     padding: 20px 12px;
     border-radius: 999px;
-    width: 100%;
     font-size: 20px;
-    border: ;
 }
 .input__field::placeholder{
     color: lightgray;
@@ -141,15 +142,16 @@ NAV
 .input__btn {
     position: absolute;
     width: 30%;
-    padding: 20px 0;
+    height: 85%;
     right: 0;
-    margin: 4px;
     border-radius: 999px;
     background-color: #6415FF;
     color: #fff;
     border: none;
     font-size: 16px;
     font-weight: 700;
+    position: 0;
+    margin-right: 0.2rem;
 }
 .input__btn:hover{
     background-color: rgb(60 13 153);
