@@ -30,6 +30,10 @@ p {
 /* 
 NAV 
 */
+
+nav {
+    height: 80px;
+}
 .nav__logo--link {
     display: flex;
     align-items: center;
@@ -81,7 +85,7 @@ NAV
 /* INTRO */
 
 #landing {
-    height: 100vh;
+    height: calc(100vh - 80px);
 }
 
 .intro {
