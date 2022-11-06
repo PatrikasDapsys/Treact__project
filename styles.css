@@ -24,10 +24,13 @@ h2 {
     color: #243E63;
 }
 section {
-    height: 90vh;
+    min-height: 90vh;
 }
 img {
     width: 100%;
+}
+li {
+    list-style: none;
 }
 
 button {
@@ -61,7 +64,7 @@ button:hover {
     color: #7c8ba1;
 }
 
-.text-heading {
+.heading {
     display: flex;
     letter-spacing: 3px;
     font-size: 20px;
@@ -123,7 +126,7 @@ nav {
 /* INTRO */
 
 #landing {
-    height: calc(100vh - 80px);
+    min-height: calc(100vh - 80px);
 }
 
 .intro {
@@ -296,9 +299,6 @@ nav {
     border-radius: 4px;
 }
 /* STEPS */
-/* #steps {
-    height: 80vh;
-} */
 
 .steps {
     display: flex;
@@ -401,11 +401,140 @@ nav {
     word-spacing: 6px;
 }
 
-
-
 .values__img--wrapper {
     width: 50%;
 }
+
+
+/* PRICING */
+
+.pricing,
+.pricing__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pricing__para {
+    width: 100%;
+    max-width: 576px;
+    text-align: center;
+    margin-top: 16px;
+}
+
+.pricing__cards {
+    width: 100%;
+    margin-top: 64px;
+    display: flex;
+    text-align: center;
+}
+
+.pricing__card {
+    position: relative;
+    width: calc(100% / 3);
+    border: 2px solid rgb(226, 232, 240);
+    border-radius: 1rem;
+    border-top: none;
+    overflow-x: hidden;
+    margin: 0 1rem;
+}
+
+.pricing__card--highlight {
+    position: absolute;
+    top: 0;
+    left: -5%;
+    width: 110%;
+    height: 0.5rem;
+    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+}
+
+.card__title-text {
+    margin: 24px 0;
+}
+
+.pricing__card--title,
+.pricing__card--price {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a202c;
+    width: 100%;
+}
+
+.pricing__card--price {
+    font-size: 48px;
+    padding: 32px 0;
+}
+.pricing__card--duration {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #A0AEC0
+}
+
+.pricing__card-list {
+    padding: 32px;
+    border: 2px solid rgb(226, 232, 240);
+    border-right: none;
+    border-left: none;
+}
+.card-list__title {
+    color: #1a202c;
+    font-size: 24px;
+    font-weight: 700;
+}
+.card-list__text {
+    color: #718096;
+    margin-top: 20px;
+}
+
+.btn__wrapper {
+    padding: 32px 64px;
+}
+.pricing__btn {
+    padding: 16px 64px;
+    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+}
+.pricing__btn:hover {
+    box-shadow: 0 20px 25px -5px rgb(0, 0, 0, 0.2),
+    0 10px 10px -5px rgb(0, 0, 0, 0.2);
+    transform: translate(0, -0.3rem); 
+}
+
+.pricing__card:nth-child(2) {
+    background: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
+}
+.pricing__card:nth-child(2) .pricing__card--highlight {
+    background: none;
+}
+.pricing__card:nth-child(2) .pricing__card--title,
+.pricing__card:nth-child(2) .pricing__card--price,
+.pricing__card:nth-child(2) .pricing__card--duration,
+.pricing__card:nth-child(2) .card-list__title,
+.pricing__card:nth-child(2) .card-list__title,
+.pricing__card:nth-child(2) .card-list__title,
+.pricing__card:nth-child(2) .card-list__title,
+.pricing__card:nth-child(2) .card-list__text
+{
+    color: #f7fafc;
+}
+
+.pricing__card:nth-child(2) .pricing__btn {
+    background: #f7fafc;
+    color: #6415FF;
+}
+
+.pricing__card:nth-child(3) .pricing__card--highlight, 
+.pricing__card:nth-child(3) .pricing__btn
+{
+    background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+}
+
+
+
+
+
+
+
 
 
 
