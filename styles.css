@@ -529,23 +529,89 @@ nav {
     background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
 }
 
+/* TESTIMONIALS */
+
+#testimonials {
+    height: 110vh;
+}
+
+.testimonials {
+    display: flex;
+}
 
 
+.testi__img--wrapper {
+    width: 50%;
+}
 
+.testi__text {
+    width: 50%;
+    padding-left: 64px;
+}
 
+.testi__para {
+    margin: 24px 0 36px 0;
+}
 
+.testi__rating--wrapper {
+    color: rgb(246 173 85);
+}
 
+.testi__review--title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #243E63;
+    margin: 16px 0;
+}
 
+.testi__review--para {
+    font-size: 18px;
+    color: #4a5568;
+    margin-bottom: 40px;
+}
 
+.testi__review--profile-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.profile__img--wrapper {
+    width: 20%;
+    border: transparent;
+    border-radius: 100%;
+    overflow: hidden;
+}
+.profile__img {
+    height: 100%;
+}
+.profile__info {
+    display: flex;
+}
+.profile__info-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1.5rem;
+    line-height: 1.5;
+}
 
+.review__name {
+    font-size: 24px;
+    font-weight: 700;
+    color: #243E63;
+}
+.review__position {
+    font-size: 20px;
+}
 
-
-
-
-
-
-
-
+.review__arrow--left {
+    font-size: 24px;
+    padding: 20px;
+    border: transparent;
+    background-color: rgb(237 242 247);
+    border-radius: 100%;
+    color: #6415FF;
+}
 
 
 
