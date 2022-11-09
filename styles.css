@@ -636,6 +636,142 @@ nav {
 }
 
 
+/* FAQS */
+
+.faqs__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.faqs__text--para {
+    max-width: 500px;
+    text-align: center;
+    margin: 16px 0 64px 0;
+}
+
+.faqs__questions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.faqs__question {
+    display: flex;
+    width: 80%;
+    background-color: rgb(245, 248, 251);
+    justify-content: space-between;
+    padding: 16px 40px;
+    border-radius: 16px;
+    transition: all 300ms ease;
+    margin-top: 24px;
+}
+.faqs__question:hover {
+    background-color: rgb(230, 235, 239);
+}
+
+.faqs__question--text {
+    font-size: 22px;
+    font-weight: 500;
+    color: #424141;
+}
+
+.arrow__down {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    color: #424141;
+    transition: all 300ms ease;
+}
+.arrow__down:hover {
+    cursor: no-drop;
+    scale: 1.1;
+}
+
+/* STARTED */
+
+#started {
+    padding: 0 48px;
+}
+
+.started {
+    min-height: 30vh;
+    display: flex;
+    background-color: rgb(100 21 255);
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+.started__text {
+    font-size: 32px;
+    font-weight: 500;
+    color: #f7fafc;
+    width: 100%;
+    max-width: 60%;
+    z-index: 2;
+}
+
+.started__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 64px 16px;
+    margin: 0 128px;
+    position: relative;
+}
+
+.started__btn{
+    padding: 20px 40px;
+    font-weight: 700;
+    z-index: 10;
+}
+
+.started__btn--links .started__btn--link:nth-child(1)  .started__btn{
+    background-color: #F56565;
+    margin-right: 16px;
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1),0 4px 6px -2px rgba(0,0,0,0.05)
+}
+.started__btn--links .started__btn--link:nth-child(1)  .started__btn:hover {
+    background-color: #d95959;
+}
+
+.started__btn--links .started__btn--link:nth-child(2)  .started__btn {
+    border: 1px solid rgb(160 174 192); 
+}
+.started__btn--links .started__btn--link:nth-child(2)  .started__btn:hover {
+    background-color: #fff;
+    color: #6415FF;
+}
+
+.blob__container:nth-child(1),
+.blob__container:nth-child(2) {
+    position: absolute;
+    font-size: 300px;
+    color: #5113cc94;
+    height: 300px;
+}
+
+.blob__container:nth-child(1) {
+    bottom: -180px;
+    left: -180px;
+}
+
+.blob__container:nth-child(2) {
+    right: 0;
+    top: -230px;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
