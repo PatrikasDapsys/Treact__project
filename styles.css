@@ -23,9 +23,6 @@ h2 {
     font-size: 56px;
     color: #243E63;
 }
-section {
-    min-height: 90vh;
-}
 img {
     width: 100%;
 }
@@ -277,6 +274,10 @@ nav {
 }
 
 /* QUALITY */
+
+#quality {
+    margin-bottom: 10vh;
+}
 
 .quality {
     display: flex;
@@ -693,11 +694,11 @@ nav {
 /* STARTED */
 
 #started {
-    padding: 0 48px;
+    padding: 48px 0 168px 0;
 }
 
 .started {
-    min-height: 30vh;
+    min-height: 40vh;
     display: flex;
     background-color: rgb(100 21 255);
     border-radius: 24px;
@@ -745,23 +746,149 @@ nav {
     color: #6415FF;
 }
 
-.blob__container:nth-child(1),
-.blob__container:nth-child(2) {
+.blob__container{
     position: absolute;
     font-size: 300px;
-    color: #5113cc94;
+    color: #4d12c4;
     height: 300px;
 }
 
 .blob__container:nth-child(1) {
-    bottom: -180px;
+    bottom: -50px;
     left: -180px;
 }
 
 .blob__container:nth-child(2) {
-    right: 0;
+    right: -220px;
     top: -230px;
 }
+
+/* FOOTER */
+
+footer {
+    min-height: 60vh;
+    background-color: #6415FF;
+    padding: 0 48px;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer__text {
+    margin-bottom: 64px;
+}
+
+.footer__lists {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__list {
+    display: flex;
+    flex-direction: column;
+    z-index: 3;
+}
+
+.footer__list--links {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__list--name,
+.link__wrapper {
+    display: flex;
+}
+
+.footer__list--name {
+    font-size: 20px;
+    font-weight: 700;
+    color: #f7fafc;
+}
+
+.footer__list--link {
+    font-size: 16px;
+    color: #f7fafc;
+}
+
+.link__wrapper {
+    margin-top: 12px;
+}
+
+.link__wrapper:nth-child(1) {
+    margin-top: 24px;
+}
+
+
+.horizontal-divider {
+    width: 100%;
+    height: 1px;
+    background-color: rgb(116 44 255);
+    margin: 64px 0;
+}
+
+.footer__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__logo--link {
+    display: flex;
+    align-items: center;
+}
+
+.footer__logo--wrapper {
+    width: 40px;
+    height: 40px;
+    margin-right: 16px;
+}
+
+.footer__logo--text {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+.copyright {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer__socials {
+    display: flex;
+    z-index: 3;
+}
+
+.footer__social--link {
+    margin: 8px ;
+}
+
+.footer__social--wrapper {
+    font-size: 16px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    color: #000;
+    background-color: #fff;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .blob__container:nth-child(1) {
+    top: -140px;
+    left: -80px;
+}
+
+footer .blob__container:nth-child(2) {
+    right: -100px;
+    top: 350px;
+}
+
+
+
+
 
 
 
